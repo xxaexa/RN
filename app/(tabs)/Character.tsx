@@ -3,16 +3,16 @@ import { StyleSheet } from 'react-native'
 import EditScreenInfo from '../../components/EditScreenInfo'
 import { Text, View } from '../../components/Themed'
 
-export default function TabOneScreen() {
+export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text className="text-6xl pb-12">Welcome</Text>
-      <Text
-        className="text-red-200 flex-1 justify-center items-center"
-        style={styles.title}>
-        This a database about a genshin impact you can find artifact, character
-        and weapon in this app btw this is a fan made app
-      </Text>
+      <Text style={styles.title}>Character</Text>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+      <EditScreenInfo path="app/(tabs)/two.tsx" />
     </View>
   )
 }
